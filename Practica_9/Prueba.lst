@@ -1,0 +1,10 @@
+affd									ORG			$AFFD
+affd			EA f3 00 6e						ORAB			[110,SP]
+b001			18 1B ea 06 bf						EMIND			1727,Y
+b006			1A 28						LEAX			8,-X
+b008			E7 fe						TST			D,PC
+b00a			EC 84						LDD			4,SP
+b00c			ED ff						LDY			[D,PC]
+b00e			61 aa						COM			6,-SP
+b010			65 f9 ca						ROL			-54,PC
+b013									END			

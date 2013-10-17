@@ -1,0 +1,12 @@
+0d0a						NEH			EQU			$0D0A
+26ec									ORG			9964
+26ec			94 28						ANDA			40
+26ee			9F 6e			HSD			CPS			%1101110
+26f0			72 09 9c						INC			@4634
+26f3			29 fb						BVS			$26F0
+26f5			05 d2			DDR			JMP			-14,PC
+26f7			64 e0 13						LSR			19,X
+26fa			60 ef						NEG			[D,Y]
+fd26									ORG			$FD26
+fd26			E2 fb 01 44						SBCB			[324,PC]
+fd2a									END			

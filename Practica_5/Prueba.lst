@@ -1,0 +1,13 @@
+270c									ORG			$270C
+270c			B4 hh ll						ANDA			WOW
+ff2						HOLA			EQU			$FF2
+270f			83 jj kk						SUBD			#1110
+2712			9F dd						CPS			%1011101
+2714			29 rr						BVS			$26FF
+2716			72 hh ll			WOW			INC			HOLA
+100						NOO			EQU			$100
+2da									ORG			$2DA
+2da									SWI			
+2da									LSL			165
+2da			18 20 qq rr						LBRA			$210
+2de									END			

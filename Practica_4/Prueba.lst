@@ -1,0 +1,10 @@
+ff2			HOLA			EQU			$FF2
+270c						ORG			$270C
+270c						ANDA			#3F
+270e			DEG			CPS			%1101110
+2710						BVS			$26FD
+2712						INC			$1010
+1000						ORG			$1000
+1000			WOW			SWI			
+1001			FIN			END			
+1001						LDAA			@456
